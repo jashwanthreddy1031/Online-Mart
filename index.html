@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ONMART - Online Shopping</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6eff0f7;
+      color: #2c3e50;
+    }
+    header {
+      background: #e06666;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #e74c3c;
+    }
+    main {
+      padding: 30px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: #fff;
+      border: 1px solid #131111;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .product:hover {
+      transform: scale(1.05);
+    }
+    .product h3 {
+      margin: 10px 0;
+    }
+    .product button {
+      background: #099d73;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .product button:hover {
+      background: #e74c3c;
+    }
+    .cart {
+      margin-top: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background: #59a4e1;
+      color: white;
+    }
+    .buy-btn {
+      display: block;
+      margin: 20px auto 0 auto;
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .buy-btn:hover {
+      background: #219150;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ONMART 🛒</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Cart</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="product">
+        <h3>🎧 Headphones</h3>
+        <p>1,500/-</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>⌚ Smart Watch</h3>
+        <p>2,000/-</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>👟 Sports Shoes</h3>
+        <p>3,000/-</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>🎒 Backpack</h3>
+        <p>1,200/-</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    <div class="cart">
+      <h2>🛍 Shopping Cart</h2>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>🎧 Headphones</td>
+          <td>1,500/-</td>
+          <td>1</td>
+          <td>1,500/-</td>
+        </tr>
+        <tr>
+          <td>⌚ Smart Watch</td>
+          <td>2,000/-</td>
+          <td>2</td>
+          <td>4,000/-</td>
+        </tr>
+      </table>
+      <button class="buy-btn">✅ Buy Now</button>
+    </div>
+  </main>
+</body>
+</html>
